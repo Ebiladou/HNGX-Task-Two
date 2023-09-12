@@ -1,12 +1,15 @@
 import './App.css'
+import Background from './components/Background'
+import Featured from './components/Featured'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
       <div>
-      <h1>Hello</h1>
+      <Background/>
+      <Featured/>
+      <Footer/> 
       </div>
-    </>
   )
 }
 
