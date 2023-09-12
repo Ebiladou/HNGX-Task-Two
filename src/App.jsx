@@ -1,16 +1,17 @@
+import { Routes, Route } from "react-router-dom";
 import './App.css'
-import Background from './components/Background'
-import Featured from './components/Featured'
-import Footer from './components/Footer'
+import Card from './components/Card'
+import MovieDetails from './pages/MovieDetails'
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
-      <div>
-      <Background/>
-      <Featured/>
-      <Footer/> 
-      </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/movie/:movieId" element={<MovieDetails />} />
+      </Routes>
+      </>
   )
 }
-
 export default App

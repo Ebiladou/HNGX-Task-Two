@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "../services/BaseApi";
 import "../App.css";
 
@@ -34,10 +35,12 @@ function Card() {
         <div key={index} className="grid-card">
           <div className="card-container">
             <div className="movie">
-              <img
-                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                alt={movie.title}
-              />
+            <Link to={`/movie/${movie.id}`}>
+                <img
+                  src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                  alt={movie.title}
+                />
+              </Link>
             </div>
             <div className="card-details">
               <p className="release-date">
