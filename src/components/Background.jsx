@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import imbd from '../assets/IMDB.png'
 import Tomatoe from '../assets/Rotten Tomatoes.png'
+import Play from '../assets/Play.png'
 import '../App.css'
 import Header from './Header'
 import axios from '../services/BaseApi'
@@ -55,18 +56,19 @@ function Background() {
 
   return (
     <div className='bg-container' style={containerStyle}>
+      <Header/>
         <div className="bg-items">
             <h1>{movieData?.title || 'Loading...'}</h1>
-            <div className="ratings">
-                <img src={imbd} alt="" />
-                <img src={Tomatoe} alt="" />
+            <div className="bg-ratings">
+                <img src={imbd} alt="icon" />
+                <img src={Tomatoe} alt="icon" />
             </div>
             <p>{movieData?.description || 'Loading...'}</p>
-            <div className="trailer">
+            <div className="bg-trailer">
+              <div><img src={Play} alt="Play icon" /></div>
                 <h1>Watch Trailer</h1>
             </div>
         </div>
-        <Header/>
     </div>
   )
 }

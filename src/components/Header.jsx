@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import {useNavigate} from 'react-router-dom'
 import SignIn from "../assets/Menu.png";
-import Logo from "../assets/Logo.png";
+import Logo from '../assets/newtv.png'
 import "../App.css";
 import axios from "../services/BaseApi";
 
@@ -8,6 +9,7 @@ function Header() {
 
   const [searchQuery, setSearchQuery] = useState(""); 
   const [searchResults, setSearchResults] = useState([]);
+  const navigate = useNavigate();
 
   const handleSearch = async () => {
     try {
@@ -20,6 +22,7 @@ function Header() {
       );
 
       setSearchResults(response.data.results);
+      navigate('/Searchresult');
     } catch (error) {
       console.error("Error searching for movies:", error);
     }
@@ -34,8 +37,9 @@ function Header() {
 
   return (
     <div className="header-flex">
-      <div>
+      <div className="header-home">
         <img src={Logo} alt="" />
+        <h1>MovieBox</h1>
       </div>
       <div>
         <input
@@ -50,8 +54,8 @@ function Header() {
         />
       </div>
       <div>
-        <button>
-          <img src={SignIn} alt="" />
+        <button className="sign-btn">
+          <img src={SignIn} alt="sign in logo" />
         </button>
       </div>
     </div>

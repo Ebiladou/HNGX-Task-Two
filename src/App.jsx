@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import './App.css'
-import Card from './components/Card'
-import MovieDetails from './pages/MovieDetails'
+import "./App.css";
+import MovieDetails from "./pages/MovieDetails";
 import Homepage from "./pages/Homepage";
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/movie/:movieId" element={<MovieDetails />} />
       </Routes>
-      </>
-  )
+    </>
+  );
 }
-export default App
+export default App;
