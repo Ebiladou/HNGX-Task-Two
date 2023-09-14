@@ -408,6 +408,10 @@ input[type="search"] {
     height: 25px;
   }
 
+  .details p {
+    display: none;
+  }
+
   /** Card **/
 .grid-container {
   grid-template-columns: repeat(2, 1fr); 
