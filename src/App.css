@@ -415,12 +415,12 @@ input[type="search"] {
   /** Card **/
 .grid-container {
   grid-template-columns: repeat(2, minmax(200px, 1fr));; 
-  grid-gap: 10px;
+  grid-gap: 8px;
 }
 
 .grid-card {
   display: inline-block;
-  width: 180px; 
+  width: 150px; 
   padding: 20px;
 }
 
