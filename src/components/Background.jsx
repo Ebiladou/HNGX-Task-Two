@@ -49,7 +49,7 @@ function Background() {
       : '',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
-      height: '400px',
+      
       width: '100%',
       transition: 'background-image 0.5s ease-in-out',
   };
