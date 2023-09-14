@@ -437,6 +437,7 @@ input[type="search"] {
 /**Pages**/
 .sidebar-container{
   width: 80px;
+  gap: 4em;
 }
 
 .sidebar-container .same-div span{
