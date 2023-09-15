@@ -48,7 +48,7 @@ function MovieDetails() {
 
         <div className="flex-details">
           <h1 data-testid="movie-title">{movieDetails.title}</h1>
-          <p data-testid="movie-release-date">{new Date (movieDetails.release_date).toUTCString()}</p>
+          <p data-testid="movie-release-date">{new Date (movieDetails.release_date)}</p>
           <p data-testid="movie-runtime">{movieDetails.runtime} mins</p>
         </div>
         <div className="more-info">
