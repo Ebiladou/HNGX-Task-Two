@@ -36,9 +36,8 @@ Follow these steps to set up and run the project locally:
     api_key: 'replace with your API key', 
     language: 'en-US',
     },
-  });
-
-   export default instance;
+    });
+    export default instance;
 
 4. To start the server, for npm or yarn, run;
 
