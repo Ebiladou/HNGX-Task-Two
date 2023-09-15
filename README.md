@@ -46,3 +46,9 @@ Follow these steps to set up and run the project locally:
     yarn dev
 
 Now you can click the link and open the application on your browser.
+
+## Live Demo
+
+Check out the live demo of the project:
+
+[Movie Website Live Demo](https://hng-tasktwo-ladou.netlify.app/)
