@@ -13,7 +13,7 @@ Follow these steps to set up and run the project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/https://github.com/Ebiladou/HNGX-Task-Two.git
+   git clone https://github.com/Ebiladou/HNGX-Task-Two.git
 
 2. Navigate to the project directory
 
